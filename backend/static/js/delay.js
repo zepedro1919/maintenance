@@ -14,7 +14,7 @@ function sendData(operationTime) {
         operation_time: parseInt(operationTime),
     };
     
-    axios.post('http://192.168.210.160:5000/save', data)
+    axios.post('https://maintenance-99lr.onrender.com/save', data)
         .then(response => {
             console.log('Data saved successfully:', response.data)
         })

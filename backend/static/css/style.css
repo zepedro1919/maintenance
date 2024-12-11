@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #C4A484;
+}
+
+.button-container {
+  display:flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 160px 200px;
+  font-size: 46px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  }
+  .btn.start {
+    background-color: #7CB342;
+  }
+  .btn.start:hover, .btn.start.active {
+    background-color: #689F38;
+  }
+  .btn.stop {
+    background-color: #D32F2F;
+  }
+  .btn.stop:hover, .btn.stop.active {
+    background-color: #C62828;
+  }
+
+.timer-container {
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.time-display {
+  color: #333;
+}
+
+.main-content {
+  margin-top: -100px;
+}

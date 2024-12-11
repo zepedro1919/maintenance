@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #C4A484;
+}
+
+.machine-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 80%;
+    max-width: 800px;
+    justify-items: center;
+}
+
+.machine-button {
+    border: none;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 150px;
+}
+
+.machine-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.machine-button img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.machine-button span {
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
